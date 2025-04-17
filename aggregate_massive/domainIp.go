@@ -1,4 +1,4 @@
-package sort_massive
+package aggregate_massive
 
 import "sort"
 

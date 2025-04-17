@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"log"
-	"sorting1/sort_massive"
+	"sorting1/aggregate_massive"
 	"sorting1/sort_numbers"
 )
 
@@ -15,7 +15,7 @@ func main() {
 	fmt.Println(sortingNums)
 
 	// Аггрегируем домены с ip адресами
-	eventObj := sort_massive.NewEvents(13)
+	eventObj := aggregate_massive.NewEvents(13)
 	eventObj.AddNewDomain([]string{"calc.domain.ru", "factor.domain.ru"}, "domain.ru")
 	eventObj.AddNewDomain([]string{"fox.mozilla.ru", "factor.mozilla.ru"}, "mozilla.ru")
 	eventObj.AddNewDomain([]string{"fox.dom.ru", "factor.dom.ru", "doc.dom.ru"}, "dom.ru")
