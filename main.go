@@ -8,12 +8,6 @@ import (
 )
 
 func main() {
-	// Сортируем числа в порядке убывания
-	sortingNums := []int{11, 5, 10, 3, 5, 2, 8, 9, 5, 2, 4, 1, 8, 9, 4, 4, 3, 0, 10}
-	fmt.Println(sortingNums)
-	sort_numbers.SortNums(sortingNums)
-	fmt.Println(sortingNums)
-
 	// Аггрегируем домены с ip адресами
 	eventObj := aggregate_massive.NewEvents(13)
 	eventObj.AddNewDomain([]string{"calc.domain.ru", "factor.domain.ru"}, "domain.ru")
