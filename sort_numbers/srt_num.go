@@ -1,7 +1,8 @@
 package sort_numbers
 
 func SortNums(numbers []int) {
-	for _, _ = range numbers {
+	// необходимо расставить по местам только n – 2 числа
+	for globalNext := 2; globalNext < len(numbers); globalNext++ {
 		var previous int
 		for i, _ := range numbers {
 			if i == len(numbers)-1 {
